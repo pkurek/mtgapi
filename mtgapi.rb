@@ -23,7 +23,7 @@ class MtgApi
 
       json['cards'].each { |card| @cards << Models::Card.new(card) }
 
-      break if json.empty? || page > 5
+      break if json.empty?
     end
 
     @cards
